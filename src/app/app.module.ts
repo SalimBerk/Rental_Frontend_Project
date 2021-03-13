@@ -8,6 +8,10 @@ import { CustomerComponent } from './components/customer/customer.component';
 import { ColorComponent } from './components/color/color.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { RentalComponent } from './components/rental/rental.component';
+import { CarComponent } from './components/car/car.component';
+import { HttpClientModule } from '@angular/common/http';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+
 
 @NgModule({
   declarations: [
@@ -16,11 +20,16 @@ import { RentalComponent } from './components/rental/rental.component';
     CustomerComponent,
     ColorComponent,
     NavbarComponent,
-    RentalComponent
+    RentalComponent,
+    CarComponent,
+    SidebarComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
